@@ -10,7 +10,7 @@ class Genre
   end
 
   def songs
-    Song.all.collect {|song| song.genre == self}
+    Song.all.select {|song| song.genre == self}
   end
 
   def self.all
@@ -18,7 +18,7 @@ class Genre
   end
 
   def artists
-    songs.collect{|song| song.artist}.uniq    
+    songs.select{|song| song.artist}.uniq    
   end
 
 
