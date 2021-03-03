@@ -21,5 +21,9 @@ class Doctor
     appointments.collect {|appt| appt.patient}.uniq    
   end
 
+  def self.all 
+    @@all 
+  end
+
 
 end
