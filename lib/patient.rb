@@ -19,7 +19,7 @@ class Patient
   end
 
   def doctors
-    appointments.collect{|appt| appt.doctor}.uniq    
+    appointments.collect {|appt| appt.doctor}.uniq    
   end
 
 end
